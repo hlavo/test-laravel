@@ -1,0 +1,59 @@
+@import 'global';
+@import "swiper";
+
+
+header {
+  position: relative;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+
+}
+
+main{
+  margin-bottom: 50px;
+}
+
+header.container > h2{
+  margin: 50px 0;
+}
+.swiper-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.gallery-top {
+  height: 90vh;
+  width: 100%;
+
+  @media (max-height: $screen-sm-max) {
+    height: 75vh;
+  }
+}
+.gallery-thumbs {
+  height: 20vh;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+  width: 20%;
+  height: 100%;
+  opacity: 0.4;
+
+  @media (max-width: $screen-md-max) {
+    width: 40%;
+  }
+}
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+
+.jumbotron{
+  margin-bottom: 0;
+}

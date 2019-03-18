@@ -1,0 +1,245 @@
+
+// INCLUDES
+@import "variables";
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/alerts';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/badges';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/button-groups';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/component-animations';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/input-groups';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/labels';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/list-group';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/media';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pager';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pagination';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/panels';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/popovers';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/theme';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'node_modules/font-awesome/scss/font-awesome';
+
+body{
+  background: linear-gradient(to bottom, #fff 0%, rgba(128, 128, 128, 0.20) 100%);
+}
+
+.logo__fv{
+  margin-top: -25px;
+  width: 130px;
+  transition-duration: 0.5s;
+}
+
+@media (max-width: $screen-sm-max) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
+.main__content{
+  & > article{
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+  h2.page__title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 10px;
+
+    span{
+      background: $brand-info;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      height: 35px;
+      width: 2px;
+
+      &:after, &:before{
+        width: 10px;
+        height: 2px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: $brand-info;
+        left: 0;
+      }
+
+      &:after{
+        bottom: 0px;
+      }
+
+      &:before{
+        top: -2px;
+
+      }
+    }
+
+  }
+
+  footer{
+    h2{
+      margin: 50px 0;
+    }
+  }
+}
+
+#main-menu{
+  font-size: 16px;
+}
+
+.logo{
+
+  background: black;
+  padding: 50px 0;
+
+  &__img{
+    margin: 0 auto;
+  }
+
+  &__text{
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    text-indent: -999999px;
+  }
+}
+
+.lang{
+
+  img{
+    max-width: 40px;
+    border-radius: 2px;
+  }
+}
+
+footer{
+  .jumbotron {
+    border-top: 1px solid $btn-default-border;
+    border-bottom: 1px solid $btn-default-border;
+    margin-bottom: 0;
+  }
+
+  .footer__wrapper{
+    padding: 50px 0;
+  }
+
+  @media (max-width: $screen-sm-max){
+    .col-xs-12.col-sm-6.col-xs-offset-0.col-sm-offset-3{
+      text-align: left;
+    }
+  }
+
+  .menu--footer{
+    float: none;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $screen-sm-max) {
+      display: block;
+      margin-bottom: 50px;
+
+      .menu__item{
+        width: 100%;
+      }
+    }
+  }
+
+  .thumbnail{
+    border-top: 1px solid $table-border-color;
+    border-bottom: 1px solid $table-border-color;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+    .fa{
+      padding-right: 10px;
+    }
+  }
+
+  .red{
+    color: $btn-danger-bg;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+
+  .navbar-header + .navbar-collapse{
+    display: flex !important;
+    justify-content: center;
+  }
+}
+
+.navbar{
+  margin-bottom: 0;
+
+  li > a{
+    padding: 15px;
+  }
+}
+
+.lang{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.quote{
+  font-family: $font-family-serif;
+}
+
+
+.social:hover, .logo__fv:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/*
+    Multicoloured Hover Variations
+*/
+
+#social-fb {
+  color: #3B5998;
+}
+#social-in {
+  color: #4c68d7;
+}
+#social-gp {
+  color: #d34836;
+}
+#social-em {
+  color: #f39c12;
+}

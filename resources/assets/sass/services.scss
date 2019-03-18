@@ -1,0 +1,19 @@
+@import 'global';
+@import 'blueimp-gallery';
+
+.img__wrapper{
+  img{
+    max-height: 200px;
+  }
+  margin-bottom: 10px;
+
+  &:not(:last-child){
+    margin-right: 10px;
+  }
+  
+}
+@media (max-width: $screen-md-max) {
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    border-bottom-color: $table-border-color;
+  }
+}

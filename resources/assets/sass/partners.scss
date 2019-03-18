@@ -1,0 +1,16 @@
+@import 'global';
+.main__content .thumbnail{
+  transition: all .3s;
+
+  @media (min-width: $screen-md) {
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+  & > img {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100px;
+  }
+}

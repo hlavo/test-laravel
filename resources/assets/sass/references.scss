@@ -1,0 +1,14 @@
+@import 'global';
+.main__content .thumbnail{
+  transition: all .3s;
+
+  @media (min-width: $screen-md) {
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+  & > img {
+    height: 100px;
+  }
+}

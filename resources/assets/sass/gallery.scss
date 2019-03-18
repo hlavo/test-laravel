@@ -1,0 +1,15 @@
+@import 'global';
+.panel.panel-default{
+  transition: all .3s;
+
+  @media (min-width: $screen-md) {
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+  .img-thumbnail.img-responsive{
+    max-height: 200px;
+  }
+}

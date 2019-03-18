@@ -1,0 +1,19 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.card__img{
+  height: 150px;
+  width: 100%;
+  background-size: contain!important;
+  background-position: center center!important;
+  background-repeat: no-repeat !important;
+  display: inline-block;
+}
+
+img{
+  max-width: 100%;
+}
